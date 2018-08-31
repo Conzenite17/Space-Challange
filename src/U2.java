@@ -18,7 +18,7 @@ public class U2 extends Rocket {
     @Override
     public boolean land() {
         chanceOfLandingCrash = (int) (8 * ((weight - 10.0)/(maxWeight - 10)));
-        if(((Math.random()*100)+1) <= chanceOfLaunchExplosion){
+        if(((Math.random()*100)+1) <= chanceOfLandingCrash){
             return false;
         }
         return true;
